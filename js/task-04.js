@@ -4,9 +4,7 @@ const buttonIncrementEl = document.querySelector('[data-action="increment"]');
 const valueEl = document.querySelector("#value");
 
 const onDecreasCounterValue = event => {
-    if (counterValue > 0) {
-        counterValue -= 1;
-    }
+    counterValue -= 1;
     return valueEl.textContent = counterValue;
 }
 
